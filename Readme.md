@@ -90,3 +90,49 @@ dist
 add above
 
 git status command
+
+git add.
+git commit -m "comment"
+git branch -m main
+git remote add origin https://github.com/anchal4561/sky-booking-app.git
+git push -u origin main
+
+
+go to  mongo db -> add ips -> Render.com IPs to add to MongoDB:
+3.75.158.163
+3.125.183.140
+35.157.117.28
+ and own ip
+
+ go to render.com -> gmail login-> dashboard-> select webservice->
+
+ build command-> cd Frontend && npm install && npm run build  && cd ../Backend && npm run build
+
+start command-> cd Backend && npm start
+ add env variables-> and 
+  NODE_VERSION :"current version no"
+
+  click deploy services?
+  check logs
+
+
+  Cloudinary setup=>
+  cloudinary.com-> login->
+  media library-> uploaded images
+
+  code-> backend-> 
+  npm i cloudinary
+
+  add env file->
+  cloudname from site-> account
+  key => access key in nav bar-> generate->
+  CLOUDINARY_CLOUD_NAME=djfvcf0eg
+CLOUDINARY_API_KEY=
+CLOUDINARY_API_SECRET=
+
+npm i multer  in backend-> handles file uploads by processing multipart/form-data
+
+npm i --save-dev @types/multer
+
+in route->
+const storage=multer.memoryStorage();

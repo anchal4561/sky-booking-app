@@ -61,11 +61,27 @@ export const signOut=async()=>{
     credentials:"include",
     method: "POST"
   });
+  console.log(response,"sign out")
   if(!response.ok){
     throw new Error("Error during sign  out");
   }
 }
 
+
+export const addMyHotel=async(hotelFormData:FormData)=>{
+  debugger
+  const response = await fetch(`${API_BASE_URL}/api/my-hotels`,{
+    method:"POST",
+    credentials:"include",
+    body: hotelFormData,
+  })
+  console.log(response,hotelFormData,"check ressp")
+  if(!response.ok){
+    throw new Error("Failed to add Hotel")
+  }
+
+  return response.json();
+}
 //npm i react-query
 
 
