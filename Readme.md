@@ -136,3 +136,8 @@ npm i --save-dev @types/multer
 
 in route->
 const storage=multer.memoryStorage();
+
+
+
+//react-icon
+npm i react-icons
